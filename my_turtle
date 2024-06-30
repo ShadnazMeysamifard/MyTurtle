@@ -1,0 +1,11 @@
+import turtle
+
+my_turtle=turtle.Turtle(shape="turtle")
+colors={"red","blue","green","pink","yellow","orange","cyan"}
+for i in range(3,10):
+    my_turtle.color(colors.pop())
+    for j in range (i):
+        my_turtle.forward(100)
+        my_turtle.right(360/i)
+
+turtle.Screen().mainloop()
